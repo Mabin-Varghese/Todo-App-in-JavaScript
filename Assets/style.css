@@ -9,7 +9,7 @@
 
 body {
     background: #3c87ff;
-    /* overflow: hidden;  */
+    overflow: hidden;
 }
 
 .warpper {
@@ -106,6 +106,10 @@ li {
     display: flex;
 }
 
+.task label p.checked {
+    text-decoration: line-through;
+}
+
 .task label input {
     margin-top: 6px;
     margin-right: 12px;
@@ -130,7 +134,7 @@ li {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
-.setting:hover .task-menu {
+.setting .task-menu.show {
     transform: scale(1);
 }
 
